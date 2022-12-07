@@ -34,8 +34,72 @@ public:
     double GetSurface() {
         return (width * height + height * depth + depth * width) * 2;
     }
+};
+class Cylinder :Solid {
+private:
+    double width;
+    double height;
+    double depth;
 
+public:
+    Cylinder(
+        double width,   //幅
+        double height,  //高さ
+        double depth) {//奥行
+        this->width = width;
+        this->height = height;
+        this->depth = depth;
+    }
+    double GetVolume() {
+        return width * height * depth;
+    }
+    double GetSurface() {
+        return (width * height + height * depth + depth * width) * 2;
+    }
+};
+class Box :Solid {
+private:
+    double width;
+    double height;
+    double depth;
 
+public:
+    Box(
+        double width,   //幅
+        double height,  //高さ
+        double depth) {//奥行
+        this->width = width;
+        this->height = height;
+        this->depth = depth;
+    }
+    double GetVolume() {
+        return width * height * depth;
+    }
+    double GetSurface() {
+        return (width * height + height * depth + depth * width) * 2;
+    }
+};
+class Box :Solid {
+private:
+    double width;
+    double height;
+    double depth;
+
+public:
+    Box(
+        double width,   //幅
+        double height,  //高さ
+        double depth) {//奥行
+        this->width = width;
+        this->height = height;
+        this->depth = depth;
+    }
+    double GetVolume() {
+        return width * height * depth;
+    }
+    double GetSurface() {
+        return (width * height + height * depth + depth * width) * 2;
+    }
 };
 
 int main()
